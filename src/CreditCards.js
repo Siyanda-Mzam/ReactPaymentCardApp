@@ -16,7 +16,7 @@ class CreditCard extends Component {
   }
   render() {
     const inlineStyling = {
-      display: 'block'
+      display: 'flex'
     }
     return (
       <div>
@@ -26,15 +26,15 @@ class CreditCard extends Component {
             <input className='number' type="number" name="fname" />
           </div>
           <div>
-            <label>Name</label>
+            <label style={inlineStyling}>Name</label>
             <input className='name' type="text" name="fname" />
           </div>
           <div>
-            <label>Expiry</label>
+            <label style={inlineStyling}>Expiry</label>
             <input className='expiry' type="text" name="fname" />
           </div>
           <div>
-            <label>CCV</label>
+            <label style={inlineStyling}>CCV</label>
             <input className='ccv' type="text" name="fname" />
           </div>
         </form>
