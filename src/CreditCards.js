@@ -16,13 +16,13 @@ class CreditCard extends Component {
   }
   render() {
     const inlineStyling = {
-      display: 'inline'
+      display: 'block'
     }
     return (
       <div>
-        <form className='creditCardForm'>
+        <form className='grid-container'>
           <div>
-            <label>Number</label>
+            <label style={inlineStyling} >Number</label>
             <input className='number' type="number" name="fname" />
           </div>
           <div>
